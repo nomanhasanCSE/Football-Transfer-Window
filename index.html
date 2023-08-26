@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Football Transfer Window</title>
+        <!-- DaisyUI linked-->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+              rel="stylesheet"
+              type="text/css" />
+        <!-- Tailwind cdn linked -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <header>
+            <section>
+                <div class="flex bg-black h-96">
+                    <div class="mt-28 pt-7"><img src="images/Top-banner.png"
+                             alt=""></div>
+                    <div>
+                        <h1 class=" pt-20 text-5xl font-semibold text-red-500 text-center">Football Transfer Window</h1>
+                        <img class="mt-2 ml-96 pl-44"
+                             src="images/Line Marker.png"
+                             alt="Line Marker">
+                        <p class="text-white">A transfer window is the period during the year in which a football club
+                            can transfer players
+                            from other playing staff into their playing staff. Such a transfer is completed by
+                            registering the player into the new club through FIFA.</p>
+                    </div>
+                    <div><img class="mt-16"
+                             src="images/Card-psg.png"
+                             alt="Card psg"></div>
+                    <div><img class="mt-64"
+                             src="images/soccer-goal-top.png"
+                             alt="soccer-goal-top"></div>
+                </div>
+            </section>
+        </header>
+        <main class="">
+            <section class="w-9/12 mx-auto pt-20 pb-40">
+                <div class="grid grid-cols-4 gap-4">
+                    <!-- Gride Row-1 -->
+                    <div class="card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/Leo Messi.png"
+                                 alt="messi" /></figure>
+                        <div class="card-body">
+                            <h2 id="player-1"
+                                class="card-title">Leonel Messi</h2>
+                            <p>36 Goals, 120 Assist</p>
+                            <div class=" ">
+                                <button id="btn-1"
+                                        class=" text-white btn btn-primary px-10">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/Ramos.png"
+                                 alt="" /></figure>
+                        <div class="card-body">
+                            <h2 id="player-2"
+                                class="card-title">Sergio Ramos</h2>
+                            <p>7 Goals, 5 Assist</p>
+                            <div class=" ">
+                                <button id="btn-2"
+                                        class="btn btn-primary px-10">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/Neymar.png"
+                                 alt="Neymar" /></figure>
+                        <div class="card-body ">
+                            <h2 id="player-3"
+                                class="card-title">Neymar Jr</h2>
+                            <p>22 Goals, 78 Assist</p>
+                            <div class=" ">
+                                <button id="btn-3"
+                                        class="btn btn-primary px-10">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- select-v -->
+                    <div class="card-compact w-full  shadow-xl">
+                        <h2 class=" text-2xl text-center ">Selected - V</h2>
+                        <img class="w-7/12 ml-12"
+                             src="images/Red Marker.png"
+                             alt="">
+                        <ol id="listedPlayer"
+                            class="list-decimal pl-6 text-xl font-medium">
+
+                        </ol>
+                    </div>
+                    <div class=" card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/Mbappe.png"
+                                 alt="Mbappe" /></figure>
+                        <div class="card-body ">
+                            <h2 id="player-4"
+                                class="card-title">Kylian Mbappé</h2>
+                            <p>26 Goals, 45 Assist</p>
+                            <div class=" ">
+                                <button id="btn-4"
+                                        class="btn btn-primary px-10">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/Machado.png"
+                                 alt="" /></figure>
+                        <div class="card-body ">
+                            <h2 id="player-5"
+                                class="card-title">Vítor Machado</h2>
+                            <p>9 Goals, 13 Assist</p>
+                            <div class=" ">
+                                <button id="btn-5"
+                                        class="btn btn-primary px-10">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/Sanches.png"
+                                 alt="" /></figure>
+                        <div class="card-body ">
+                            <h2 id="player-6"
+                                class="card-title">Renato Sanches</h2>
+                            <p>15 Goalsid="sanches", 8 Assist</p>
+                            <div class=" ">
+                                <button id="btn-6"
+                                        class="btn btn-primary px-10">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-compact w-full  shadow-xl">
+                        <h2 class="  text-2xl text-center ">Budget</h2>
+                        <img class="w-2/5 ml-16"
+                             src="images/Red Marker.png"
+                             alt="">
+                        <div class=" flex pt-3">
+                            <span class="content-left  text-left text-xl ml-2 mr-3 ">Per Player: </span>
+
+                            <input class="w-24 text-white bg-black border-solid border-2 border-indigo-600"
+                                   type="number"
+                                   name=""
+                                   id="perPlayer">
+
+                        </div>
+                        <div><button class="bg-lime-600 w-9/12 mx-6 my-6 font-medium py-1"
+                                    id="calculate">Calculate</button>
+                        </div>
+                        <!-- calculate total player cost and show  -->
+
+                        <div class="flex justify-between">
+                            <p class=" text-xl ml-2  text-left">Total: </p>
+                            <P>$<span id="TotalPlayersAmount"
+                                      class="text-red-500 mr-5">00</span></p>
+                        </div>
+
+
+                        <!-- calculate total player cost and add managment cost here -->
+
+                        <div class=" flex w-auto my-4">
+                            <span class="text-xl ml-2 content-left w-24
+                        text-left">Manager:</span>
+
+                            <input class="w-24 text-white bg-black border-solid border-2 border-indigo-600"
+                                   type="number"
+                                   name=""
+                                   id="manager">
+
+                        </div>
+                        <!-- Get the cost for Coach -->
+                        <div class=" flex ">
+                            <span class=" text-xl ml-2  content-left w-24 text-left">Coach :</span>
+
+                            <input class="w-24 text-white bg-black border-solid border-2 border-indigo-600"
+                                   type="number"
+                                   name=""
+                                   id="coach">
+
+                        </div>
+                        <!-- calculate the total cost by clicking this button -->
+                        <div><button class="bg-lime-600 w-9/12 mx-6 my-6 font-medium py-1"
+                                    id="calculateTotal">Calculate
+                                Total</button></div>
+
+                        <div class="flex justify-between">
+                            <p class=" text-xl ml-2 text-left">Total cost is:</p>
+                            <p>$ <span id="totalPriceIs"
+                                      class="text-red-500 mr-5">00</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+            </section>
+        </main>
+
+
+        <footer class="bg-black text-center py-10 text-white">
+            <small class="">Developed and Maintainted by Noman Hasan</small> <br>
+            <small>Copyright © 2022 All rights reserved. </small>
+        </footer>
+        <script src="js/dom.js"></script>
+    </body>
+
+</html>
